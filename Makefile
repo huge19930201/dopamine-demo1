@@ -1,8 +1,6 @@
-# 目标系统：iOS 16（多巴胺 rootless 越狱）
-TARGET := iphone:clang:16.0
+# 不指定具体 SDK 版本，自动用编译服务器上的最新版，避免版本不存在导致失败
 ARCHS := arm64
 
-# rootless：所有文件装到 /var/jb
 THEOS_PACKAGE_SCHEME = rootless
 
 include $(THEOS)/makefiles/common.mk
