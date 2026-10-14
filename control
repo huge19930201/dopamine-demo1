@@ -1,0 +1,9 @@
+Package: com.demo.dopaminealert
+Name: Dopamine Demo Alert
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: 验证多巴胺越狱插件编译流程的示例（装好后会弹提示框）
+Depends: ellekit
+Maintainer: you
+Author: you
+Section: Tweaks
