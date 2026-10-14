@@ -1,5 +1,5 @@
-# 不指定 SDK 版本（服务器自动选择）
-# 多巴胺只支持 iOS 15+，UI 相关 API 都可用，故关闭"旧版本可用性"报错
+# SDK 用 16.5（编译服务器已装），最低部署 iOS 15（多巴胺最低要求）
+TARGET := iphone:clang:16.5:15.0
 ARCHS := arm64
 
 # rootless：所有文件装到 /var/jb
@@ -9,6 +9,6 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = DemoAlert
 DemoAlert_FILES = Tweak.x
-DemoAlert_CFLAGS = -fobjc-arc -Wno-error=unguarded-availability-new -Wno-error=unguarded-availability -Wno-error=deprecated-declarations
+DemoAlert_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
