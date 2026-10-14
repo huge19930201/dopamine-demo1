@@ -9,6 +9,6 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = DemoAlert
 DemoAlert_FILES = Tweak.x
-DemoAlert_CFLAGS = -fobjc-arc -Wno-error=unguarded-availability-new -Wno-error=unguarded-availability
+DemoAlert_CFLAGS = -fobjc-arc -Wno-error=unguarded-availability-new -Wno-error=unguarded-availability -Wno-error=deprecated-declarations
 
 include $(THEOS_MAKE_PATH)/tweak.mk
